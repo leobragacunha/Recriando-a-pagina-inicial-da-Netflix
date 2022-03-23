@@ -1,0 +1,169 @@
+:root {
+	--vermelho: #E80812;
+	--preto: #000000;
+	--branco: #E5E5D7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+	background-color: var(--preto);
+	font-family: "Arial", Times, Serif;
+	color: var(--branco);
+}
+
+/*BARRA HORIZONTAL TOPO*/
+header .top_bar {
+  display: flex;
+  flex-direction: row;
+  height: 7vw;
+  justify-content: flex-start; 
+  align-items: center;
+  margin-left: 10px;
+}
+
+header .top_bar .menu {
+  flex-basis: 70%;
+}
+
+header .top_bar .logo {
+    height: 7vw;
+}
+
+header .top_bar .menu a{
+	text-decoration: none;
+	color: var(--branco);
+	margin-left:10px;
+}
+
+header .top_bar .others .user_photo {
+	width: 3vw;
+	height: 3vw;
+	border-radius: 5%;
+}
+
+header .top_bar .others {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+  flex-basis: 30%;
+}
+
+.header_button {
+	border: none;
+	background-color: var(--preto);
+	color: var(--branco);
+	cursor: pointer;
+}
+
+/*DROPDOWN*/
+.dropdown {
+	position: relative;
+	display: inline-block;
+
+}
+
+.dropdown_content {
+	display: none;
+	position: absolute;
+	background-color:rgba(0,0,0,.5);
+	right:0;
+	min-width: 400px;
+	box-shadow:0px 12px 16px 0px rgba(0,0,0,.3);
+	padding:10px;
+	color: var(--branco);
+	z-index: 1;
+    overflow-x:hidden;
+	overflow-y:auto;
+    max-height: 300px;
+
+
+}
+
+.dropdown:hover .dropdown_content{
+  display:block;
+  
+}
+
+
+.img_news {
+    height: 80px;
+	border-radius: 5%;
+	padding-right: 15px;
+}
+
+tr td a{
+  text-decoration: none;
+  color: var(--branco);
+}
+
+td {
+	border-bottom: solid 1px var(--branco);
+	padding: 5px 0;
+}
+
+tr:hover {
+	background-color:rgba(0,0,0,.8);
+
+}
+
+/*MAIN*/
+main {
+  background-image: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,.5)), url('../img/thewitcher_main.jpg');
+  background-size:cover;
+  height:500px;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main_film .main_film_title {
+	font-size: 40px;
+}
+
+.main_film .main_film_text {
+    padding:30px 30px 30px 0;    
+	font-size: 15px;
+}
+
+.main_film .container {
+	width: 60%;
+	margin-left:30px;
+}
+
+.main_film button{
+	background-color: var(--branco);
+	color: var(--preto);
+	border:none;
+	margin-left: 15px;
+	padding: 10px 15px;
+	border-radius: 5%;
+	font-weight:bold;
+	font-size: 15px;
+	transition: .3s ease;
+}
+
+.main_film button i{
+    margin-right:10px;
+}
+
+.main_film button:hover {
+	opacity: 0.7;
+}
+
+/*PAGINA*/
+
+.page_title {
+	margin: 20px;
+}
+
+.img_series {
+	/*width: 20vw;*/
+	border-radius: 3%;
+}
