@@ -20,38 +20,47 @@ body {
 header .top_bar {
   display: flex;
   flex-direction: row;
-  height: 7vw;
-  justify-content: flex-start; 
-  align-items: center;
-  margin-left: 10px;
+  height: 6vw;
+  width: 100%;
+  justify-content: space-between; 
+  align-content: center;
+  position: fixed;
+  top:0px;
+  background-color: var(--preto);
+  z-index:9999;
+
 }
 
-header .top_bar .menu {
-  flex-basis: 70%;
-}
-
-header .top_bar .logo {
-    height: 7vw;
+header .top_bar .menu .logo {
+    height: 100%;
 }
 
 header .top_bar .menu a{
 	text-decoration: none;
 	color: var(--branco);
 	margin-left:10px;
+	vertical-align: middle;
 }
 
 header .top_bar .others .user_photo {
 	width: 3vw;
 	height: 3vw;
-	border-radius: 5%;
+	border-radius: 50%;
+	cursor:pointer;
 }
 
 header .top_bar .others {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-right: 15px;
   justify-content:space-around;
   flex-basis: 30%;
+}
+
+header .top_bar .others .search{
+	display: flex;
+	flex-direction: row;
 }
 
 .header_button {
@@ -112,11 +121,37 @@ tr:hover {
 
 }
 
+/*Search form*/
+.search_box {
+	display: inline-block;
+	position: relative;
+	text-indent: 30px;
+	background-image: url(../img/search_icon.png);
+	background-repeat: no-repeat;
+    background-size: 25px;
+	background-position: 3px 3px;
+    background-color: transparent;
+	color:var(--branco);
+	border: 1px solid transparent;
+	height: 5vh;
+	width: 30px	;
+	transition: all .5s ease;
+	color: var(--branco);
+	cursor:pointer;
+}
+
+.search_box:focus {
+	border: 1px solid var(--branco);
+	width: 200px;
+}
+
+
+
 /*MAIN*/
 main {
   background-image: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,.5)), url('../img/thewitcher_main.jpg');
   background-size:cover;
-  height:500px;
+  height:100vh;
   background-position: center;
   display: flex;
   flex-direction: column;
@@ -133,6 +168,7 @@ main {
 }
 
 .main_film .container {
+	
 	width: 60%;
 	margin-left:30px;
 }
@@ -165,5 +201,20 @@ main {
 
 .img_series {
 	/*width: 20vw;*/
-	border-radius: 5%;
+	border-radius: 3%;
+	transition: all .5s ease;
+	transition-delay: 1s;
+}
+
+.item {
+    position:relative;
+	z-index:-1;
+}
+
+.item:hover {
+	width: 140%;
+	cursor: pointer;
+	position:relative;
+	z-index: 2;
+	
 }

@@ -17,11 +17,10 @@
 <body>
   <header>
     <div class="top_bar">
-	  
+	    <nav class="menu">
   	    <a href="index.html">
 	      <img src="img/netflix_logo.jpg" alt="Logo Netflix" class="logo">
 	    </a>
-	  <nav class="menu">
 	  	<a href="index.html"><b>Início</b></a>
 		<a href="series.html">Séries</a>
 		<a href="filmes.html">Filmes</a>
@@ -29,8 +28,16 @@
 		<a href="minha_lista.html">Minha Lista</a>
       </nav>
 	  <nav class="others">
-	    <button role="button" class="header_button" id="search_button"><i class="fa-solid fa-magnifying-glass"></i></button>
-		<p>Infantil</p>
+	    <div class="search" id="search">
+	    <form class="search_input">
+		<!--<span class="header_button" id="span_search_button"><i class="fa-solid fa-magnifying-glass" id="search_button"></i></span>-->
+		<input type="search" class="search_box" id="search_box" placeholder="Título, gente e gêneros.">
+		
+		
+		
+		
+		</div>
+		<p class="header_button" id="infantil">Infantil</p>
 		
 		<!--DROPDOWN CONTENT-->
 		<div class="dropdown">
@@ -58,8 +65,7 @@
 				<td><a href="#"><p class="text_news">Assista novamente: Vikings!</a></p>
 			  </tr>
 	        </table>
-  
-  </div>
+          </div>
 		</div>
 		<img src="img/user_photo.jpg" alt="user photo" class="user_photo">
 		
@@ -100,6 +106,16 @@
    <div class="netflix_originals">
     <div class="container">
 	  <div class="page_title"><h3>Originais Netflix</h3></div>
+	  <div class="owl-carousel owl-theme">
+        <div class="teste"><img src="img/on_batman.jpg" alt="Batman" class="img_series"></div>
+        <div class="item"><img src="img/on_chernobyl.jpg" alt="Chernobyl" class="img_series"></div>
+        <div class="item"><img src="img/on_dark.jpg" alt="Dark" class="img_series"></div>
+        <div class="item"><img src="img/on_freeguy.jpg" alt="Free Guy" class="img_series"></div>
+        <div class="item"><img src="img/on_lucifer.jpg" alt="Lucifer" class="img_series"></div>
+        <div class="item"><img src="img/on_mi3.jpg" alt="Mission Impossible 3" class="img_series"></div>
+        <div class="item"><img src="img/on_peakyblinders.jpg" alt="Ric e Morty" class="img_series"></div>
+        <div class="item"><img src="img/on_suits.jpg" alt="Ric e Morty" class="img_series"></div>
+	</div>
 	</div>
   </div>
   
@@ -127,6 +143,32 @@
   <script src="js/owl/owl.carousel.min.js"></script>
   <script src="js/owl/setup.js"></script>
 </body>
+
+<script> 
+   
+   /*var boxValue = 0;
+   
+    function showSearch() {
+	  document.getElementById("search_button").style.transform = "translate(28px, 0)";
+	  document.getElementById("search_box").style.width = "200px";
+	  document.getElementById("search_box").style.visibility = "visible";
+	  boxValue = 1;
+	  console.log(boxValue);
+    }
+  
+     function hideSearch() {
+      document.getElementById("searchbutton").style.transform = "translate(-28px,0)";
+	  document.getElementById("search_box").style.width = "0px";
+	  document.getElementById("search_box").style.visibility = "hidden";
+	  boxValue = 0;
+	    console.log(boxValue);
+    }
+	
+  document.getElementById("search_button").addEventListener("click",showSearch);
+  document.getElementById("search_box").addEventListener("click",search,false);*/
+
+		  
+</script>
 
 
 </html>
