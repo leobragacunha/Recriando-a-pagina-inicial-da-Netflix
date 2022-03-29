@@ -19,7 +19,11 @@
     <div class="top_bar">
 	    <nav class="menu">
   	    <a href="index.html">
-	      <img src="img/netflix_logo.jpg" alt="Logo Netflix" class="logo">
+		  <picture>
+		    <source srcset="img/netflix_logo_reduzido.jpg" media="(max-width:800px)">
+		    <source srcset="img/netflix_logo.jpg">
+  	        <img src="img/netflix_logo.jpg" alt="Logo Netflix" class="logo">		  
+		  </picture>
 	    </a>
 	  	<a href="index.html"><b>Início</b></a>
 		<a href="series.html">Séries</a>
@@ -107,7 +111,7 @@
     <div class="container">
 	  <div class="page_title"><h3>Originais Netflix</h3></div>
 	  <div class="owl-carousel owl-theme">
-        <div class="teste"><img src="img/on_batman.jpg" alt="Batman" class="img_series"></div>
+        <div class="item"><img src="img/on_batman.jpg" alt="Batman" class="img_series"></div>
         <div class="item"><img src="img/on_chernobyl.jpg" alt="Chernobyl" class="img_series"></div>
         <div class="item"><img src="img/on_dark.jpg" alt="Dark" class="img_series"></div>
         <div class="item"><img src="img/on_freeguy.jpg" alt="Free Guy" class="img_series"></div>

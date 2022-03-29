@@ -202,9 +202,61 @@ main {
 .img_series {
 	/*width: 20vw;*/
 	border-radius: 3%;
-	transition: all .5s ease;
-	transition-delay: 1s;
 }
 
 
+/*.owl-carousel {
+    z-index: -1;
+}*/
+
+/*.item {
+	z-index:1;
+}*/
+
+.item:hover {
+	
+	margin:10px;
+	z-index:5;
+}
+
+/*div.series .container {
+	position: relative;
+
+}*/
+
+/*RESPONSIVIDADE*/
+
+@media screen and (max-width: 800px) {
+
+header .top_bar {
+  display: flex;
+  flex-direction: column;  
+  height: 15vw;
+  align-items: flex-start;
+  justify-content: center;
+
+}
+
+header .top_bar .menu .logo {
+    height: 6vw;
+}
+
+header .top_bar .menu {
+	display: flex;
+	flex-direction:row;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+header .top_bar .others {
+  width: 100%;
+}
+}
+
+@media screen and (max-width: 540px) {
+	
+main .main_film .container .botoes button {
+	margin: 15px;
+}
 }

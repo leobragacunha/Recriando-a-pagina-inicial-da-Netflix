@@ -19,7 +19,11 @@
     <div class="top_bar">
 	    <nav class="menu">
   	    <a href="index.html">
-	      <img src="img/netflix_logo.jpg" alt="Logo Netflix" class="logo">
+		  <picture>
+		    <source srcset="img/netflix_logo_reduzido.jpg" media="(max-width:600px)">
+		    <source srcset="img/netflix_logo.jpg" media="(max-width:800px)">
+  	        <img src="img/netflix_logo.jpg" alt="Logo Netflix" class="logo">		  
+		  </picture>
 	    </a>
 	  	<a href="index.html"><b>Início</b></a>
 		<a href="series.html">Séries</a>
